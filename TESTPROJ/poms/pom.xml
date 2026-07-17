@@ -12,7 +12,7 @@
     <module>code/routines</module>
     <module>code/beans</module>
     <module>jobs/process/demojob_0.1</module>
-    <module>jobs/process/mysql_to_file_0.1</module>
+    <module>jobs/process/mysql_to_logrow_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
