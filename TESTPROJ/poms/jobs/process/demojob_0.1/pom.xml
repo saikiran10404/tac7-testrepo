@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.example.testproj</groupId>
     <artifactId>code.Master</artifactId>
-    <version>7.3.1</version>
+    <version>8.0.1</version>
     <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.testproj.job</groupId>
@@ -13,128 +13,362 @@
   <version>0.1.0</version>
   <name>TESTPROJ demoJob-0.1.0 (0.1,Job Designs)</name>
   <properties>
-    <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
-    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
-    <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
-    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
-    <talend.job.version>0.1</talend.job.version>
-    <talend.project.name.lowercase>testproj</talend.project.name.lowercase>
-    <talend.job.path>testproj</talend.job.path>
-    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
-    <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <talend.project.name>TESTPROJ</talend.project.name>
-    <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>demojob_0_1</talend.job.finalName>
-    <talend.pigudf.groupid>org.example.testproj.pigudf</talend.pigudf.groupid>
-    <talend.routine.groupid>org.example.testproj.code</talend.routine.groupid>
-    <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
-    <talend.job.stat>true</talend.job.stat>
-    <talend.job.context>Default</talend.job.context>
-    <talend.job.date>${maven.build.timestamp}</talend.job.date>
-    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>demoJob</talend.job.name>
-    <talend.job.id>_SSzUEH6JEfGTfd5PnEEA7g</talend.job.id>
-    <talend.project.id>0</talend.project.id>
-    <talend.job.folder></talend.job.folder>
-    <talend.job.framework></talend.job.framework>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
+    <talend.job.date>${maven.build.timestamp}</talend.job.date>
+    <talend.pigudf.groupid>org.example.testproj.pigudf</talend.pigudf.groupid>
+    <talend.job.folder></talend.job.folder>
+    <talend.job.context>Default</talend.job.context>
+    <talend.lineage.support>false</talend.lineage.support>
+    <talend.job.path>testproj</talend.job.path>
+    <talend.job.git.commit.id>0a3615e59708f26e2e50fe92d5179a33ba3b2c4a</talend.job.git.commit.id>
+    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
+    <talend.job.stat>true</talend.job.stat>
+    <talend.job.git.author>sai@gmail.com</talend.job.git.author>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Xshare:off -Djavaagent:../lib/talendagent-1.0.2.jar=bootjar=../lib/talendboot-1.0.10.jar </talend.job.jvmargs>
+    <talend.job.id>_SSzUEH6JEfGTfd5PnEEA7g</talend.job.id>
+    <talend.job.version>0.1</talend.job.version>
+    <talend.job.framework></talend.job.framework>
+    <talend.job.parent.id></talend.job.parent.id>
+    <talend.routine.groupid>org.example.testproj.code</talend.routine.groupid>
+    <talend.appint.microservice>false</talend.appint.microservice>
+    <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
+    <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
+    <talend.project.name.lowercase>testproj</talend.project.name.lowercase>
+    <talend.project.id>0</talend.project.id>
+    <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
+    <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
+    <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
+    <talend.project.branch.name>master</talend.project.branch.name>
+    <talend.product.version>8.0.1.20260521_1039-patch</talend.product.version>
+    <talend.project.name>TESTPROJ</talend.project.name>
+    <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
+    <talend.job.git.commit.date>1784538858000</talend.job.git.commit.date>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
+    <talend.job.name>demoJob</talend.job.name>
+    <talend.job.finalName>demojob_0_1</talend.job.finalName>
   </properties>
   <dependencies>
     <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
-      <version>1.1</version>
+      <version>2.4.11</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>antlr-runtime-3.5.2</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.antlr</groupId>
+      <artifactId>antlr-runtime</artifactId>
+      <version>3.5.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>5.0.3</version>
+      <version>9.5</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
       <artifactId>audit-common</artifactId>
-      <version>1.8.0</version>
+      <version>1.16.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
       <artifactId>audit-log4j2</artifactId>
-      <version>1.8.0</version>
+      <version>1.16.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.11.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.8.1</version>
+      <version>3.18.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-text</artifactId>
+      <version>1.14.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.daikon</groupId>
       <artifactId>crypto-utils</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
+      <version>7.1.28</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.dom4j</groupId>
       <artifactId>dom4j</artifactId>
-      <version>2.1.1</version>
+      <version>2.1.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.30.2-GA</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.marshalling</groupId>
+      <artifactId>jboss-marshalling</artifactId>
+      <version>2.0.12.Final</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.components.lib</groupId>
       <artifactId>job-audit</artifactId>
-      <version>1.1</version>
+      <version>1.6.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>json-smart</artifactId>
-      <version>2.2.1</version>
+      <version>2.4.11</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
-      <version>2.12.1</version>
+      <version>2.25.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
-      <version>2.12.1</version>
+      <version>2.25.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.12.1</version>
+      <artifactId>log4j-layout-template-json</artifactId>
+      <version>2.25.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j2-impl</artifactId>
+      <version>2.19.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.talend.daikon</groupId>
       <artifactId>logging-event-layout</artifactId>
-      <version>1.8.0</version>
+      <version>1.16.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
-      <version>7.3.1</version>
+      <version>8.0.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.7.25</version>
+      <version>2.0.16</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>talend_file_enhanced_20070724</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.talend</groupId>
+      <artifactId>system-routines</artifactId>
+      <version>8.0.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend</groupId>
+      <artifactId>system-routines-dq</artifactId>
+      <version>8.0.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.metrics</groupId>
+      <artifactId>talendCBP</artifactId>
+      <version>1.1.7</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.components</groupId>
+      <artifactId>talend_file_enhanced</artifactId>
+      <version>1.3.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.metrics</groupId>
+      <artifactId>talendagent</artifactId>
+      <version>1.0.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.metrics</groupId>
+      <artifactId>talendboot</artifactId>
+      <version>1.0.10</version>
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.example.testproj.code</groupId>
       <artifactId>routines</artifactId>
-      <version>7.3.1</version>
+      <version>8.0.1</version>
     </dependency>
   </dependencies>
   <build>
     <finalName>${talend.job.finalName}</finalName>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.4.0</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-utils</artifactId>
+              <version>4.0.3</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
   <profiles>
     <profile>
@@ -144,6 +378,48 @@
       </activation>
       <build>
         <plugins>
+          <plugin>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>3.4.0</version>
+            <executions>
+              <execution>
+                <id>copy-wsdl</id>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>copy-resources</goal>
+                </goals>
+                <configuration>
+                  <outputDirectory>${project.build.outputDirectory}/${talend.project.name.lowercase}/${talend.job.finalName}/wsdl</outputDirectory>
+                  <overwrite>true</overwrite>
+                  <resources>
+                    <resource>
+                      <directory>${basedir}/src/main/java/${talend.project.name.lowercase}/${talend.job.finalName}/wsdl</directory>
+                      <includes>
+                        <include>*.wsdl</include>
+                      </includes>
+                    </resource>
+                  </resources>
+                </configuration>
+              </execution>
+            </executions>
+            <dependencies>
+              <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.20.0</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.18.0</version>
+              </dependency>
+              <dependency>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-utils</artifactId>
+                <version>4.0.3</version>
+              </dependency>
+            </dependencies>
+          </plugin>
           <plugin>
             <artifactId>maven-assembly-plugin</artifactId>
             <executions>
@@ -186,6 +462,13 @@
                 </goals>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.19.0</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -216,15 +499,15 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
+        <routinespom.dir>${parentpom.dir}code/routines/</routinespom.dir>
+        <routinescode.dir>${parentpom.dir}code/routines/src/main/</routinescode.dir>
         <assemblies.dir>${basedir}/src/main/assemblies/</assemblies.dir>
         <pigudfpom.dir>${parentpom.dir}code/pigudf/</pigudfpom.dir>
-        <routinescode.dir>${parentpom.dir}code/routines/src/main/</routinescode.dir>
-        <parentpom.dir>${project.parent.relativePath}</parentpom.dir>
         <templates.dir>${basedir}/src/main/templates/</templates.dir>
-        <routinespom.dir>${parentpom.dir}code/routines/</routinespom.dir>
-        <pigudfcode.dir>${parentpom.dir}code/pigudf/src/main/</pigudfcode.dir>
-        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
         <poms.dir>${basedir}</poms.dir>
+        <joblet.dir>${parentpom.dir}jobs/</joblet.dir>
+        <parentpom.dir>${project.parent.relativePath}</parentpom.dir>
+        <pigudfcode.dir>${parentpom.dir}code/pigudf/src/main/</pigudfcode.dir>
       </properties>
     </profile>
     <profile>
@@ -242,12 +525,12 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
         <talend.libraries.excludes.set>${talend.libraries.includes.set}</talend.libraries.excludes.set>
-        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
-        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
-        <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
         <current.job.binaries.include>${project.groupId}:${project.artifactId}:${project.version}</current.job.binaries.include>
+        <talend.pigudf.excludes.set>org.talend.pigudf.${talend.project.name.lowercase}:*</talend.pigudf.excludes.set>
+        <talend.jobs.excludes.set>${project.groupId}:*</talend.jobs.excludes.set>
+        <talend.code.excludes.set>org.talend.code.${talend.project.name.lowercase}:*</talend.code.excludes.set>
+        <talend.libraries.includes.set>org.talend.libraries:*</talend.libraries.includes.set>
       </properties>
     </profile>
     <profile>
@@ -295,6 +578,9 @@
     </profile>
     <profile>
       <id>include-running-log4j</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
       <properties>
         <log4j.running.dir>${current.resources.dir}/</log4j.running.dir>
       </properties>
@@ -338,6 +624,112 @@
       <properties>
         <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
       </properties>
+    </profile>
+    <profile>
+      <id>include-microservice-em-dependencies</id>
+      <activation>
+        <property>
+          <name>studio.prometheus.metrics</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+              <execution>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>${basedir}/src/main/assemblies/assembly.xml</descriptor>
+                  </descriptors>
+                  <tarLongFileMode>gnu</tarLongFileMode>
+                  <appendAssemblyId>false</appendAssemblyId>
+                  <finalName>${talend.job.finalName}</finalName>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <microservice.configs.dir>${current.resources.dir}/</microservice.configs.dir>
+        <contexts.running.dir>${current.resources.dir}/</contexts.running.dir>
+        <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
+      </properties>
+    </profile>
+    <profile>
+      <id>include-microservice-prometheus-dependencies</id>
+      <activation>
+        <property>
+          <name>studio.prometheus.metrics</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <dependencies>
+        <dependency>
+          <groupId>io.micrometer</groupId>
+          <artifactId>micrometer-registry-prometheus</artifactId>
+          <version>1.9.17</version>
+        </dependency>
+        <dependency>
+          <groupId>io.prometheus.jmx</groupId>
+          <artifactId>collector</artifactId>
+          <version>0.16.1</version>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
+      <id>include-test-junit5</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.5.4</version>
+            <dependencies>
+              <dependency>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-utils</artifactId>
+                <version>4.0.3</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.maven.surefire</groupId>
+                <artifactId>surefire-junit-platform</artifactId>
+                <version>3.5.4</version>
+              </dependency>
+            </dependencies>
+            <configuration>
+              <includes>
+                <include>${talend.job.path}/**/*.java</include>
+              </includes>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+      <dependencies>
+        <dependency>
+          <groupId>org.junit.platform</groupId>
+          <artifactId>junit-platform-launcher</artifactId>
+          <version>1.12.1</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.junit.platform</groupId>
+          <artifactId>junit-platform-engine</artifactId>
+          <version>1.12.1</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.junit.platform</groupId>
+          <artifactId>junit-platform-commons</artifactId>
+          <version>1.12.1</version>
+          <scope>test</scope>
+        </dependency>
+      </dependencies>
     </profile>
   </profiles>
 </project>
